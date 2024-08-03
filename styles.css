@@ -1,0 +1,289 @@
+*/{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'open sans',sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width:100% ;
+    border-radius: 20px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 120px;
+
+    .logo{
+        width: 150px;
+        
+    }
+
+    .links-flex{
+        display: flex;
+        gap: 10px;
+    }
+
+    .links-flex .anchor a{
+        color: black;
+        padding: 20px;
+    }
+
+    .anchor a:hover{
+        background-color: red;
+    }
+}
+
+.hero{
+    .text-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       margin-top: 150px;
+       padding: 60px 40px;
+    }
+     .text-section h2{
+        font-size: 3rem ;
+        font-weight: normal;
+        text-align: center;
+       }
+
+       .text-section h2 span{
+        background-color: red;
+       }
+}
+
+.gallery{
+    .flex-gallery{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .flex-gallery .gallery{
+        width: 400px;
+        border-radius: 20px;
+       
+    }
+
+    .gallery img-1{
+        border-radius: 20px;
+        box-shadow: 16 16 16 #333;
+    }
+
+    .flex-gallery .gallery img-1:hover{
+        opacity: 0,9;
+        cursor: pointer;
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid;
+    margin-top: 30px;
+
+    .footer-logo{
+        width: 100px;
+    }
+
+    div h3{
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    div i{
+
+
+    }
+
+    div a:hover{
+        color: red;
+    }
+}
+
+.services{
+    background-color: #333;
+    color: white;
+   
+    
+
+    h1{
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 30px;
+       
+        
+        
+      
+    }
+
+
+    
+
+    .services-flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        gap: 20px;
+        padding: 30px 50px;
+        width: 900px;
+       
+        
+    }
+
+      .content{
+        float: 1;
+    }
+}
+
+.team{
+    h2{
+        text-align: center;
+    }
+    .team-flex{
+        display: flex;
+        gap: 10px;
+        padding: 20px 50px;
+    }
+
+    .card{
+        margin: 10px;
+    }
+}
+
+.hero-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    min-height: 500px;
+
+    .text{
+        font-size: 2rem;
+    }
+    span{
+        background-color: red;
+    }
+
+    
+}
+
+.contact-container{
+    h2 {
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+       
+    }
+
+    div{
+     
+        min-width: 800px;
+    }
+    
+    input{
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid;
+        margin-bottom: 50px;
+    }
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    
+}
+
+button{
+    padding: 20px 400px;
+    
+}
+button:hover{
+    background-color: black;
+    color: white;
+
+    
+
+  
+
+ 
+    
+}
+
+@media(max-width:768px){
+    .header{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services-flex{
+        display: flex;
+        flex-direction: column;  
+        justify-content: center;
+        align-items: center;
+      max-width: 300px;
+    }
+
+    .team{
+        display: flex;
+        flex-direction: column;
+    }
+    .team-flex{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 50px;
+    }
+    .hero-contact{
+        margin-top: 20px;
+    }
+     .footer h3{
+        margin-top: 60px;
+    }
+}
